@@ -49,6 +49,11 @@
     </nameField>
     <pluralLabel>Animals</pluralLabel>
     <recordTypes>
+        <fullName>Cat</fullName>
+        <active>true</active>
+        <label>Cat</label>
+    </recordTypes>
+    <recordTypes>
         <fullName>Dog</fullName>
         <active>true</active>
         <label>Dog</label>
