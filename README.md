@@ -65,6 +65,35 @@ Or, if this suits you,
 All the magic happens in `ConfigurableFactory` so that's where you
 should look first.
 
+### best practices
+
+There are two levels on which you can extend this: adding more
+subtypes to an existing type or adding a whole new type.
+
+To add a *new _subtype_* to an existing type, you must:
+
+ * create the Apex class for the subtype, extending the base type class
+ * create a new record type on the corresponding sObject
+
+It is probably a good idea to:
+
+ * add subtype-specific functionality at the subtype level
+ * keep type-general functionality at the type level
+ * create a new page layout for the subtype record type
+
+To create a *completely new _type_*, it's a little more involved.  Here's
+the general idea:
+
+ * create a new sObject for the type
+ * create an abstract class for the type implementing `Configurable`
+ * create a factory class for the type to automatically downcast
+ * create the initial subtype implementations as described above
+
+In all cases, the general rule seems to be that the type's sObject name
+should be the same as the name of the abstract base class, and the
+record type developer names should be the same as the concrete
+implementation names.
+
 more information
 ----------------
 
