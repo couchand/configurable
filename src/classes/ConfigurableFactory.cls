@@ -6,6 +6,18 @@ global class ConfigurableFactory
                .initialize( configuration );
     }
 
+    public static List<Configurable> build( List<sObject> configurations )
+    {
+        List<Configurable> configurables = new List<Configurable>();
+
+        for ( sObject configuration : configurations )
+        {
+            configurables.add( build( configuration ) );
+        }
+
+        return configurables;
+    }
+
     private static Configurable instantiate( sObject configurable )
     {
         return (Configurable)getType( configurable ).newInstance();

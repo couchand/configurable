@@ -8,12 +8,10 @@ public class AnimalFactory
     public static List<Animal> build( List<sObject> configurations )
     {
         List<Animal> animals = new List<Animal>();
-
-        for ( sObject configuration : configurations )
+        for ( Configurable configurable : ConfigurableFactory.build( configurations ) )
         {
-            animals.add( build( configuration ) );
+            animals.add( (Animal)configurable );
         }
-
         return animals;
     }
 
