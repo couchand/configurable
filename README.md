@@ -66,10 +66,10 @@ a few record types.
 
 A class diagram is somewhat more involved.
 
-    Configurable
+    Configurable  < - - - ConfigurableFactory
     ^
     |
-    --- Animal
+    --- Animal  < - - - AnimalFactory
       A
       |
       |- Cat
