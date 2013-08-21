@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Animal</members>
+        <members>AnimalFactory</members>
+        <members>Cat</members>
+        <members>Chicken</members>
+        <members>Cow</members>
+        <members>Dog</members>
+        <members>Farm</members>
+        <members>FarmController</members>
+        <members>Pig</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Farm</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>Farm</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Animal__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Animal__c</members>
+        <members>Inventory</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Animal__c-Animal Layout</members>
+        <members>Animal__c-Cat Layout</members>
+        <members>Animal__c-Chicken Layout</members>
+        <members>Animal__c-Cow Layout</members>
+        <members>Animal__c-Dog Layout</members>
+        <members>Animal__c-Pig Layout</members>
+        <name>Layout</name>
+    </types>
+    <version>28.0</version>
+</Package>
