@@ -5,6 +5,18 @@ public class AnimalFactory
         return (Animal)ConfigurableFactory.build( configuration );
     }
 
+    public static List<Animal> build( List<sObject> configurations )
+    {
+        List<Animal> animals = new List<Animal>();
+
+        for ( sObject configuration : configurations )
+        {
+            animals.add( build( configuration ) );
+        }
+
+        return animals;
+    }
+
     public static Cat buildCat( sObject configuration )
     {
         return (Cat)AnimalFactory.build( configuration );
