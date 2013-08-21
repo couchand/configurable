@@ -70,7 +70,7 @@ should look first.
 There are two levels on which you can extend this: adding more
 subtypes to an existing type or adding a whole new type.
 
-To add a *new _subtype_* to an existing type, you must:
+To add a _new **subtype**_ to an existing type, you must:
 
  * create the Apex class for the subtype, extending the base type class
  * create a new record type on the corresponding sObject
@@ -81,7 +81,7 @@ It is probably a good idea to:
  * keep type-general functionality at the type level
  * create a new page layout for the subtype record type
 
-To create a *completely new _type_*, it's a little more involved.  Here's
+To create a _completely new **type**_, it's a little more involved.  Here's
 the general idea:
 
  * create a new sObject for the type
