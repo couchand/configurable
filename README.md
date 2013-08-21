@@ -4,6 +4,7 @@ configurable
 a single-table inheritance lightweight ORM example on Force.com
 
  * introduction
+ * quick start
  * documentation
  * more information
 
@@ -15,6 +16,17 @@ inheritance built on top of the Force.com platform.  This example
 uses the record type of an `sObject` to determine the appropriate
 Apex class to dynamically load.  In this way polymorphic Apex behavior
 is mapped directly onto standard Force.com record type configuration.
+
+quick start
+-----------
+
+Spin up a developer org (<http://developer.force.com>) and upload the
+`src` directory followed by the `example` directory using Ant or
+Eclipse.
+
+Log in to your dev org, go to the Farm application, add some Animals,
+and load up the Inventory to see the polymorphic behavior in action.
+Then check out the code.
 
 documentation
 ------------
