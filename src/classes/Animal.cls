@@ -13,6 +13,11 @@ public abstract class Animal implements Configurable
         return me.Name;
     }
 
+    public String getSpecies()
+    {
+        return me.RecordType.DeveloperName;
+    }
+
     public Decimal value
     {
         get
