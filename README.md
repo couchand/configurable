@@ -35,6 +35,24 @@ pattern on a project, this is what you'd copy over.  The folder
 documentation
 ------------
 
+There are two files that make up the framework, `Configurable` and
+`ConfigurableFactory`.  Configurable is the interface that your classes
+will implement, allowing the ConfigurableFactory to load them
+automatically.
+
+The Configurable interface consists of a single method.
+
+    Configurable initialize( sObject configuration );
+
+Implement this method to load your configuration, return `this`, and
+you're all set.
+
+The ConfigurableFactory likewise has a single method.
+
+    Configurable build( sObject configuration );
+
+### example project
+
 The data model for the example is simple; there is one object with
 a few record types.
 
