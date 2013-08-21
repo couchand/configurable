@@ -103,8 +103,8 @@ awoken by the smell of smoke, went into the hallway to find a fire.
 Calculating wind resistance, ambient temperature and the fluid
 dynamics he extinguished the fire with the least liquid needed.
 
-A little while later, the engineer woke up and also discovered the
-fire.  Noticing the hotel's fire extinguisher, she put out the fire
-and returned to bed.
+A little while later, the engineer woke up and also discovered a fire
+in the hallway.  Noticing the hotel's fire extinguisher, she quickly
+put out the fire and returned to bed.
 
 The punch line has been left as an exercise for the reader.
