@@ -1,0 +1,8 @@
+<apex:page controller="FarmController">
+  <apex:pageBlock>
+    <apex:pageBlockTable var="animal" value="{!animals}">
+      <apex:column headerValue="Name" value="{!animal.name}" />
+      <apex:column headerValue="Value" value="{!animal.value}" />
+    </apex:pageBlockTable>
+  </apex:pageBlock>
+</apex:page>
