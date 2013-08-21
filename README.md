@@ -28,6 +28,10 @@ Log in to your dev org, go to the Farm application, add some Animals,
 and load up the Inventory to see the polymorphic behavior in action.
 Then check out the code.
 
+The folder `src` has the base framework.  If you wanted to use this
+pattern on a project, this is what you'd copy over.  The folder
+`example` has the example files to illustrate how it works.
+
 documentation
 ------------
 
