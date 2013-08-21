@@ -4,4 +4,29 @@ public class AnimalFactory
     {
         return (Animal)ConfigurableFactory.build( configuration );
     }
+
+    public static Cat buildCat( sObject configuration )
+    {
+        return (Cat)AnimalFactory.build( configuration );
+    }
+
+    public static Dog buildDog( sObject configuration )
+    {
+        return (Dog)AnimalFactory.build( configuration );
+    }
+
+    public static Cow buildCow( sObject configuration )
+    {
+        return (Cow)AnimalFactory.build( configuration );
+    }
+
+    public static Pig buildPig( sObject configuration )
+    {
+        return (Pig)AnimalFactory.build( configuration );
+    }
+
+    public static Chicken buildChicken( sObject configuration )
+    {
+        return (Chicken)AnimalFactory.build( configuration );
+    }
 }

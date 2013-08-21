@@ -70,7 +70,7 @@ Now, to load a particular `Animal` by `Id`:
 
 Or, if this suits you,
 
-    Animal peggySue = AnimalFactory.build([
+    Cat peggySue = AnimalFactory.buildCat([
         SELECT Id, RecordType.DeveloperName FROM Animal WHERE Id = :searchId
     ]);
 
