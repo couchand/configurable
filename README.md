@@ -101,6 +101,16 @@ the general idea:
  * create a factory class for the type to automatically downcast
  * create the initial subtype implementations as described above
 
+It's also possible to start using the framework on an _existing **data
+model**_.  As long as record types are consistently being used on the
+sObjects in question and the record type names don't collide with
+system reserved words it's straightforward.  The process is similar
+to the new type process above.
+
+ * create an abstract class for the type, implementing `Configurable`
+ * create a factory class for the type to automatically downcast
+ * create the initial subtype implementations corresponding to existing record types
+
 In all cases, the general rule seems to be that the type's sObject name
 should be the same as the name of the abstract base class, and the
 record type developer names should be the same as the concrete
