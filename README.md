@@ -85,7 +85,7 @@ To create a _completely new **type**_, it's a little more involved.  Here's
 the general idea:
 
  * create a new sObject for the type
- * create an abstract class for the type implementing `Configurable`
+ * create an abstract class for the type, implementing `Configurable`
  * create a factory class for the type to automatically downcast
  * create the initial subtype implementations as described above
 
