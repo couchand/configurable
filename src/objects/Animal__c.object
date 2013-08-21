@@ -37,6 +37,98 @@
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
+    <fields>
+        <fullName>Beak_Length__c</fullName>
+        <externalId>false</externalId>
+        <label>Beak Length</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color__c</fullName>
+        <externalId>false</externalId>
+        <label>Color</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Black</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Brown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>White</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Black and White</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Black and Brown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>White and Brown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pink</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Grey</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Cuddliness__c</fullName>
+        <externalId>false</externalId>
+        <label>Cuddliness</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Height__c</fullName>
+        <externalId>false</externalId>
+        <label>Height</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Hoove_Thickness__c</fullName>
+        <externalId>false</externalId>
+        <label>Hoove Thickness</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lives_Remaining__c</fullName>
+        <defaultValue>IF($RecordType.Name == &apos;Cat&apos;, 9, null)</defaultValue>
+        <externalId>false</externalId>
+        <label>Lives Remaining</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
     <label>Animal</label>
     <listViews>
         <fullName>All</fullName>
@@ -52,11 +144,149 @@
         <fullName>Cat</fullName>
         <active>true</active>
         <label>Cat</label>
+        <picklistValues>
+            <picklist>Color__c</picklist>
+            <values>
+                <fullName>Black</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black and Brown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black and White</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White and Brown</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Chicken</fullName>
+        <active>true</active>
+        <label>Chicken</label>
+        <picklistValues>
+            <picklist>Color__c</picklist>
+            <values>
+                <fullName>Black</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black and White</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>White and Brown</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Cow</fullName>
+        <active>true</active>
+        <label>Cow</label>
+        <picklistValues>
+            <picklist>Color__c</picklist>
+            <values>
+                <fullName>Black</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black and White</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White and Brown</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
     </recordTypes>
     <recordTypes>
         <fullName>Dog</fullName>
         <active>true</active>
         <label>Dog</label>
+        <picklistValues>
+            <picklist>Color__c</picklist>
+            <values>
+                <fullName>Black</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black and Brown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Black and White</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White and Brown</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Pig</fullName>
+        <active>true</active>
+        <label>Pig</label>
+        <picklistValues>
+            <picklist>Color__c</picklist>
+            <values>
+                <fullName>Black</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pink</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
     </recordTypes>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
